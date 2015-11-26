@@ -1,7 +1,7 @@
-package fhj.swengb.avatarix
+package fhj.swengb.course.avatarix.test
 
 
-import fhj.swengb.{Students, GitHub}
+import fhj.swengb.{Students, Student, GitHub, Person}
 import org.junit.Assert._
 import org.junit.Test
 
@@ -9,15 +9,18 @@ import org.junit.Test
   * Created by graf, hasenbichler, koerner on 14.11.15.
   */
 
-class AvatarixTest{
+class AvatarixTest {
 
+  @Test def isValid(): Unit = {
+    assertEquals("jbtastic", Students.jblazevic.githubUsername)
+   }
 
-  @Test def isValidUrl(): Unit = {
-    assertTrue(Students.jblazevic.firstName == "Josip")
+  @Test def correctAvatarUrl(): Unit = {
+    assertTrue(2 != 1)
+    //assertEquals(irgendwas == anzahlDerStudenten)
   }
 
   @Test def correctHtmlUrl(): Unit = {
-    assertEquals(1,1)
     //assertTrue(Student existiert nur einmal)
   }
 
